@@ -1,0 +1,27 @@
+name: Quarto Publish
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to push to gh-pages
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Create .nojekyll file
+        run: echo "" > .nojekyll
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+
