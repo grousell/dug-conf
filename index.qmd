@@ -1,9 +1,8 @@
 ---
-title: "DUG::conf"
+title: "Home"
 ---
 
 This is the webpage for DUG::conf 2025. 
 
 Adding some content here as a test. 
 
-Here is some more content to test automation. 
