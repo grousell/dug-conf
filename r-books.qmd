@@ -1,0 +1,8 @@
+---
+title: "R Books"
+---
+
+[R for Data Science](https://r4ds.had.co.nz/)\
+[Advanced R](https://adv-r.hadley.nz/)\
+[Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/)\
+[Happy Git with R](https://happygitwithr.com/)  

@@ -2,7 +2,6 @@
 title: "Home"
 ---
 
-This is the webpage for DUG::conf 2025. 
+This is the webpage for DUG::conf 2025.
 
-Adding some content here as a test. 
-
+Adding some content here as a test.
