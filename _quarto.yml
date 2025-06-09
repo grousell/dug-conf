@@ -8,14 +8,14 @@ website:
     style: "docked"
     search: true
     contents:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
       - section: "R Resources"
         href: r-resources.qmd
         contents: 
-          - ggplot-2.qmd
-
+          ggplot-2.qmd
 format:
   html:
     theme: cosmo
