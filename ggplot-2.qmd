@@ -1,0 +1,6 @@
+---
+title: "ggplot2"
+---
+
+Here are some visuals using `ggplot2`
+
