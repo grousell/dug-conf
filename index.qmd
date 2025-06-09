@@ -2,6 +2,4 @@
 title: "DUG::conf"
 ---
 
-## First ever DUG::conf
-
-This is a test website. 
+This is the webpage for DUG::conf 2025. 
