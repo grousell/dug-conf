@@ -4,7 +4,11 @@
     "href": "ggplot-2.html",
     "title": "ggplot2",
     "section": "",
-    "text": "Here are some visuals using ggplot2"
+    "text": "Here are some visuals using ggplot2",
+    "crumbs": [
+      "R Resources",
+      "ggplot2"
+    ]
   },
   {
     "objectID": "about.html",
@@ -21,7 +25,7 @@
     "href": "index.html",
     "title": "DUG::conf",
     "section": "",
-    "text": "This is the webpage for DUG::conf 2025.",
+    "text": "This is the webpage for DUG::conf 2025.\nAdding some content here as a test.",
     "crumbs": [
       "Home"
     ]
