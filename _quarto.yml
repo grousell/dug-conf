@@ -5,8 +5,6 @@ website:
   title: "DUG::conf"
   body-header: | 
     ![Logo image](/images/dugheader2.png){width=120%}
-  # body-footer: |
-  #   Here is the page footer. 
   sidebar:
     style: "docked"
     search: true
