@@ -13,9 +13,12 @@ website:
       - text: "About"
         href: about.qmd
       - section: "R Resources"
-        href: r-resources.qmd
+        contents:
+          - r-resources.qmd
+          - ggplot-2.qmd
+      - section: "Power BI"
         contents: 
-          ggplot-2.qmd
+          -power-bi.qmd
 format:
   html:
     theme: cosmo
