@@ -3,4 +3,8 @@
 .RData
 .Ruserdata
 
+# Ignore any Quarto temporary files from rendering locally. Don't push them to github.
 /.quarto/
+_site/
+_site_libs/
+docs/
