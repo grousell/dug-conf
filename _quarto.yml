@@ -18,7 +18,6 @@ website:
         contents:
           - text: "R Books"
             href: r-books.qmd
-          - ggplot-2.qmd
 format:
   html:
     theme: cosmo
