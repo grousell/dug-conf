@@ -1,34 +1,12 @@
 [
   {
-    "objectID": "ggplot-2.html",
-    "href": "ggplot-2.html",
-    "title": "ggplot2",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "Logo image\n\nHere are some visuals using ggplot2",
+    "text": "Logo image\n\nThis is the webpage for DUG::conf 2025.\nAdding some content here as a test.",
     "crumbs": [
-      "R Resources",
-      "ggplot2"
-    ]
-  },
-  {
-    "objectID": "r-books.html",
-    "href": "r-books.html",
-    "title": "R Books",
-    "section": "",
-    "text": "Logo image\n\n\n\nSelected Reading for R\nR for Data Science\nAdvanced R\nExploratory Data Analysis with R\nHappy Git with R\nggplot2",
-    "crumbs": [
-      "R Resources",
-      "R Books"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Logo image\n\nIn the spring of 2007 the Hierarchical Linear Model Learning and Research Community (HLM-LRC) was formed to promote and support the use of Hierarchical Linear Modelling. A variety of opportunities arose for members to practice and implement their HLM skills including presentations at the Canadian Society for the Study of Education and an Ontario Ministry of Education research inquiry into early years through the Barrie Region MISA PNC (Managing Information for Student Achievement Professional Network Centre). Over the years, the topics explored through the HLM-LRC expanded to include all manner of issues related to data and research sciences.\nIn the spring of 2013 the HLM-LRC was rebranded as the Data User Group (DUG) to reflect the broader discussions and capacity building opportunities that emerged through the network. Resources that were developed as part of the HLM-LRC have been moved to this public website to make the organizational learning visible and promote broader participation.\nParticipation in DUG is open to anyone with an interest in data and/or research sciences and consists of email notifications of relevant events and resources. The meetings and workshops that are organized by DUG are guided by member inquiries, interests and feedback. If you are interested in joining the DUG email distribution list, or would like to recommend/request a workshop topic, please contact Conley_Chris@Durham.edu.on.ca",
-    "crumbs": [
-      "About"
+      "Home"
     ]
   },
   {
@@ -42,13 +20,24 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Logo image\n\nThis is the webpage for DUG::conf 2025.\nAdding some content here as a test.",
+    "text": "Logo image\n\nIn the spring of 2007 the Hierarchical Linear Model Learning and Research Community (HLM-LRC) was formed to promote and support the use of Hierarchical Linear Modelling. A variety of opportunities arose for members to practice and implement their HLM skills including presentations at the Canadian Society for the Study of Education and an Ontario Ministry of Education research inquiry into early years through the Barrie Region MISA PNC (Managing Information for Student Achievement Professional Network Centre). Over the years, the topics explored through the HLM-LRC expanded to include all manner of issues related to data and research sciences.\nIn the spring of 2013 the HLM-LRC was rebranded as the Data User Group (DUG) to reflect the broader discussions and capacity building opportunities that emerged through the network. Resources that were developed as part of the HLM-LRC have been moved to this public website to make the organizational learning visible and promote broader participation.\nParticipation in DUG is open to anyone with an interest in data and/or research sciences and consists of email notifications of relevant events and resources. The meetings and workshops that are organized by DUG are guided by member inquiries, interests and feedback. If you are interested in joining the DUG email distribution list, or would like to recommend/request a workshop topic, please contact Conley_Chris@Durham.edu.on.ca",
     "crumbs": [
-      "Home"
+      "About"
+    ]
+  },
+  {
+    "objectID": "r-books.html",
+    "href": "r-books.html",
+    "title": "R Books",
+    "section": "",
+    "text": "Logo image\n\n\n\nSelected Reading for R\nR for Data Science\nAdvanced R\nExploratory Data Analysis with R\nHappy Git with R\nggplot2",
+    "crumbs": [
+      "R Resources",
+      "R Books"
     ]
   }
 ]

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://grousell.github.io/dug-conf/ggplot-2.html</loc>
-    <lastmod>2025-06-09T19:25:31.705Z</lastmod>
-  </url>
-  <url>
-    <loc>https://grousell.github.io/dug-conf/r-books.html</loc>
-    <lastmod>2025-06-09T19:25:31.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://grousell.github.io/dug-conf/about.html</loc>
-    <lastmod>2025-06-09T19:25:31.705Z</lastmod>
+    <loc>https://grousell.github.io/dug-conf/index.html</loc>
+    <lastmod>2025-06-10T13:20:12.417Z</lastmod>
   </url>
   <url>
     <loc>https://grousell.github.io/dug-conf/r-resources.html</loc>
-    <lastmod>2025-06-09T19:25:31.706Z</lastmod>
+    <lastmod>2025-06-10T13:20:12.417Z</lastmod>
   </url>
   <url>
-    <loc>https://grousell.github.io/dug-conf/index.html</loc>
-    <lastmod>2025-06-09T19:25:31.706Z</lastmod>
+    <loc>https://grousell.github.io/dug-conf/about.html</loc>
+    <lastmod>2025-06-10T13:20:12.416Z</lastmod>
+  </url>
+  <url>
+    <loc>https://grousell.github.io/dug-conf/r-books.html</loc>
+    <lastmod>2025-06-10T13:20:12.417Z</lastmod>
   </url>
 </urlset>
