@@ -18,6 +18,8 @@ website:
         contents:
           - text: "R Books"
             href: r-books.qmd
+          - text: "Fork me!"
+            href: github-presentation.qmd
 format:
   html:
     theme: cosmo
