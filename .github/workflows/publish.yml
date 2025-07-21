@@ -24,7 +24,6 @@ jobs:
             any::tidyverse
             grousell/obt
             grousell/tcdsb
-            # any::tidyverse line can be removed if a DESCRIPTIONS file contains the depenencies. See usethis::use_description()
           install-quarto: true
 
       - name: Create .nojekyll file
