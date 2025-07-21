@@ -237,6 +237,198 @@
     ]
   },
   {
+    "objectID": "maps-with-sf.html#overview",
+    "href": "maps-with-sf.html#overview",
+    "title": "maps with the sf package",
+    "section": "Overview",
+    "text": "Overview\n\nSpatial data in R\nSimple features, the sf R package\nGeometrical operations\nTidy: sf, dplyr & ggplot2",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#what-makes-spatial-data-challenging",
+    "href": "maps-with-sf.html#what-makes-spatial-data-challenging",
+    "title": "maps with the sf package",
+    "section": "What makes spatial data challenging?",
+    "text": "What makes spatial data challenging?\n\n\n\nThe Earth is a sphere/spheroid/potato*\ncoordinates consist of two or three numbers that lose most of their meaning when considered individually\nthe most common form is Longitude, Latitude (LL) pairs\nfrom LL data, stats::dist will not give you distances\nmaps and screens are flat, and hence can only show projected data\nprojected distances are distorted, and possibly areas, shapes, directions and shortest paths too",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#what-makes-spatial-data-challenging-1",
+    "href": "maps-with-sf.html#what-makes-spatial-data-challenging-1",
+    "title": "maps with the sf package",
+    "section": "What makes spatial data challenging?",
+    "text": "What makes spatial data challenging?\n\n\n\nthe meaning of a LL coordinate depends on the geographic datum (e.g., WGS84, ETRS89, NAD27 etc)\na datum is unlikely important when mapping continents, but it is when drones try to deliver pizzas",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#simple-features",
+    "href": "maps-with-sf.html#simple-features",
+    "title": "maps with the sf package",
+    "section": "Simple features",
+    "text": "Simple features\n\nfeature: abstraction of real world phenomena (type or instance); has a geometry and other attributes (properties)\nsimple feature: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves) \nrepresent geometry by points, lines or polygons, or collections thereof",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#simple-features-1",
+    "href": "maps-with-sf.html#simple-features-1",
+    "title": "maps with the sf package",
+    "section": "Simple features",
+    "text": "Simple features\n\na formal standard (ISO, OGC) since 2004\nsupported by OSGeo libraries GEOS and GDAL\nadopted by GeoJSON, GeoSPARQL\nhas well-known text (WKT) and binary (WKB) encodings\nWKB used by spatial databases (PostGIS, MariaDB, SQLite, …)\nstandard specifies a number of topological metrics, predicates and operations",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#operations-on-geometries",
+    "href": "maps-with-sf.html#operations-on-geometries",
+    "title": "maps with the sf package",
+    "section": "Operations on geometries:",
+    "text": "Operations on geometries:\nSingle:\n\nlogical predicates: is_valid, is_simple, is_empty\nquantities: length, area\ndimension: 0 = point(s), 1 = linear, 2 = surface\nderived geometries: buffer, centroid, boundary, convex_hull, simplify, linemerge, polygonize, node, point_on_surface, triangulate",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#operations-on-geometries-1",
+    "href": "maps-with-sf.html#operations-on-geometries-1",
+    "title": "maps with the sf package",
+    "section": "Operations on geometries:",
+    "text": "Operations on geometries:\nPairs/sets:\n\nquantities: distance\npredicates: intersects, within, contains, covers, covered_by, crosses, touches, overlaps, equals, disjoint, all other DE-9IM\nnew geometries: intersection, difference, union, sym_difference",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#intersection-special-cases",
+    "href": "maps-with-sf.html#intersection-special-cases",
+    "title": "maps with the sf package",
+    "section": "Intersection special cases",
+    "text": "Intersection special cases\n\n\n(typed) EMPTY: think of as missing (NA) geometry\nGEOMETRYCOLLECTION: single feature geometry with mix of anything",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#package-sf",
+    "href": "maps-with-sf.html#package-sf",
+    "title": "maps with the sf package",
+    "section": "Package sf",
+    "text": "Package sf\n\n\n\nsf stores simple feature geometries as a list-column\n\n\n\n\n\n\nIt does that in sf objects, extending data.frame or tibble\n\n\n\n\n\n\nHow does it work?",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#sfg-geometry-for-one-feature",
+    "href": "maps-with-sf.html#sfg-geometry-for-one-feature",
+    "title": "maps with the sf package",
+    "section": "sfg : geometry for one feature",
+    "text": "sfg : geometry for one feature\n{width = “800}",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#package-sf-features",
+    "href": "maps-with-sf.html#package-sf-features",
+    "title": "maps with the sf package",
+    "section": "Package sf features",
+    "text": "Package sf features\n\nsf objects extend data.frame or tbl_df with a geometry list-column\nfast (C++) WKB \\(\\Longleftrightarrow\\) R conversion, used for I/O with libraries and databases\nspatial indexes created on-the-fly to scale up geometrical predicates (intersects) and operations (intersection), and selections (nearest feature)",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#package-sf-features-1",
+    "href": "maps-with-sf.html#package-sf-features-1",
+    "title": "maps with the sf package",
+    "section": "Package sf features",
+    "text": "Package sf features\n\nsimple and relatively small API\nfunctions/methods start with st_, as in\n\n\nlibrary(sf)\nst_is_simple(st_point(0:1))\n## [1] TRUE",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#sf-tidyverse",
+    "href": "maps-with-sf.html#sf-tidyverse",
+    "title": "maps with the sf package",
+    "section": "sf & tidyverse",
+    "text": "sf & tidyverse\n\nsf spatial objects are data.frames (or tibbles)\nyou can always un-sf, and work with tbl_df or data.frame having an sfc list-column\nsf methods for filter, arrange, distinct, group_by, ungroup, mutate, select have sticky geometry",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#sf-tidyverse-1",
+    "href": "maps-with-sf.html#sf-tidyverse-1",
+    "title": "maps with the sf package",
+    "section": "sf & tidyverse",
+    "text": "sf & tidyverse\n\nst_join joins tables based on a spatial predicate, or user-defined function\nsummarise unions geometry by group (or altogether)",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#conclusions",
+    "href": "maps-with-sf.html#conclusions",
+    "title": "maps with the sf package",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nsf provides tidy spatial analysis, for vector data\nthere are 6 package vignettes for further reading\n\nThanks to:\n\n\n\nEdzer Pebesma\nthe #rspatial community\nR Consortium for funding sf and stars",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
+    "objectID": "maps-with-sf.html#further-reading",
+    "href": "maps-with-sf.html#further-reading",
+    "title": "maps with the sf package",
+    "section": "Further reading:",
+    "text": "Further reading:\nEdzer Pebesma, 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal (2018) 10:1, pages 439-446.\nhttps://journal.r-project.org/archive/2018/RJ-2018-009/index.html",
+    "crumbs": [
+      "Meetings",
+      "2025-07-17",
+      "Maps with the `sf` Package"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
@@ -255,6 +447,83 @@
     "crumbs": [
       "About"
     ]
+  },
+  {
+    "objectID": "maps_with_sf.html",
+    "href": "maps_with_sf.html",
+    "title": "maps with the sf package",
+    "section": "",
+    "text": "xkcd.com"
+  },
+  {
+    "objectID": "maps_with_sf.html#overview",
+    "href": "maps_with_sf.html#overview",
+    "title": "maps with the sf package",
+    "section": "Overview",
+    "text": "Overview\n\nSpatial data in R\nSimple features, the sf R package\nGeometrical operations\nTidy: sf, dplyr & ggplot2"
+  },
+  {
+    "objectID": "maps_with_sf.html#what-makes-spatial-data-challenging",
+    "href": "maps_with_sf.html#what-makes-spatial-data-challenging",
+    "title": "maps with the sf package",
+    "section": "What makes spatial data challenging?",
+    "text": "What makes spatial data challenging?\n\n\nThe Earth is a sphere/spheroid/potato*\ncoordinates consist of two or three numbers that lose most of their meaning when considered individually\nthe most common form is Longitude, Latitude (LL) pairs\nfrom LL data, stats::dist will not give you distances\nmaps and screens are flat, and hence can only show projected data\nprojected distances are distorted, and possibly areas, shapes, directions and shortest paths too\nthe meaning of a LL coordinate depends on the geographic datum (e.g., WGS84, ETRS89, NAD27 etc)\na datum is unlikely important when mapping continents, but it is when drones try to deliver pizzas"
+  },
+  {
+    "objectID": "maps_with_sf.html#simple-features",
+    "href": "maps_with_sf.html#simple-features",
+    "title": "maps with the sf package",
+    "section": "Simple features",
+    "text": "Simple features\n\nfeature: abstraction of real world phenomena (type or instance); has a geometry and other attributes (properties)\nsimple feature: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves) \nrepresent geometry by points, lines or polygons, or collections thereof\na formal standard (ISO, OGC) since 2004\nsupported by OSGeo libraries GEOS and GDAL\nadopted by GeoJSON, GeoSPARQL\nhas well-known text (WKT) and binary (WKB) encodings\nWKB used by spatial databases (PostGIS, MariaDB, SQLite, …)\nstandard specifies a number of topological metrics, predicates and operations"
+  },
+  {
+    "objectID": "maps_with_sf.html#operations-on-geometries",
+    "href": "maps_with_sf.html#operations-on-geometries",
+    "title": "maps with the sf package",
+    "section": "Operations on geometries:",
+    "text": "Operations on geometries:\nSingle:\n\nlogical predicates: is_valid, is_simple, is_empty\nquantities: length, area\ndimension: 0 = point(s), 1 = linear, 2 = surface\nderived geometries: buffer, centroid, boundary, convex_hull, simplify, linemerge, polygonize, node, point_on_surface, triangulate\n\nPairs/sets:\n\nquantities: distance\npredicates: intersects, within, contains, covers, covered_by, crosses, touches, overlaps, equals, disjoint, all other DE-9IM\nnew geometries: intersection, difference, union, sym_difference"
+  },
+  {
+    "objectID": "maps_with_sf.html#intersection-special-cases",
+    "href": "maps_with_sf.html#intersection-special-cases",
+    "title": "maps with the sf package",
+    "section": "Intersection special cases",
+    "text": "Intersection special cases\n\n\n(typed) EMPTY: think of as missing (NA) geometry\nGEOMETRYCOLLECTION: single feature geometry with mix of anything"
+  },
+  {
+    "objectID": "maps_with_sf.html#package-sf",
+    "href": "maps_with_sf.html#package-sf",
+    "title": "maps with the sf package",
+    "section": "Package sf",
+    "text": "Package sf\n\n\nsf stores simple feature geometries as a list-column\n\n\n\n\nIt does that in sf objects, extending data.frame or tibble\n\n\n\n\nHow does it work?"
+  },
+  {
+    "objectID": "maps_with_sf.html#sfg-geometry-for-one-feature",
+    "href": "maps_with_sf.html#sfg-geometry-for-one-feature",
+    "title": "maps with the sf package",
+    "section": "sfg : geometry for one feature",
+    "text": "sfg : geometry for one feature"
+  },
+  {
+    "objectID": "maps_with_sf.html#package-sf-features",
+    "href": "maps_with_sf.html#package-sf-features",
+    "title": "maps with the sf package",
+    "section": "Package sf features",
+    "text": "Package sf features\n\nsf objects extend data.frame or tbl_df with a geometry list-column\nfast (C++) WKB \\(\\Longleftrightarrow\\) R conversion, used for I/O with libraries and databases\nspatial indexes created on-the-fly to scale up geometrical predicates (intersects) and operations (intersection), and selections (nearest feature)\nsimple and relatively small API\nfunctions/methods start with st_, as in\n\n\nlibrary(sf)\n## Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE\nst_is_simple(st_point(0:1))\n## [1] TRUE"
+  },
+  {
+    "objectID": "maps_with_sf.html#sf-tidyverse",
+    "href": "maps_with_sf.html#sf-tidyverse",
+    "title": "maps with the sf package",
+    "section": "sf & tidyverse",
+    "text": "sf & tidyverse\n\nsf spatial objects are data.frames (or tibbles)\nyou can always un-sf, and work with tbl_df or data.frame having an sfc list-column\nsf methods for filter, arrange, distinct, group_by, ungroup, mutate, select have sticky geometry\nst_join joins tables based on a spatial predicate, or user-defined function\nsummarise unions geometry by group (or altogether)\n\n\n```"
+  },
+  {
+    "objectID": "maps_with_sf.html#conclusions",
+    "href": "maps_with_sf.html#conclusions",
+    "title": "maps with the sf package",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nsf provides tidy spatial analysis, for vector data\nthere are 6 package vignettes for further reading\n\nThanks to:\n\n\nEdzer Pebesma\nthe #rspatial community\nR Consortium for funding sf and stars\n\n\nFurther reading:\nEdzer Pebesma, 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal (2018) 10:1, pages 439-446. https://journal.r-project.org/archive/2018/RJ-2018-009/index.html"
   },
   {
     "objectID": "posts/2025-07-21_test/index.html",
