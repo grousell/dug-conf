@@ -2,4 +2,4 @@
 title: "Home"
 ---
 
-Welcome to DUG!
+Welcome to DUG! This is a beta test page for using GitHub pages.
