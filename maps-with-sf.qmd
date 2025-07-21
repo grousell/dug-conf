@@ -49,7 +49,10 @@ knitr::opts_chunk$set(echo = FALSE, collapse = TRUE)
 ## Simple features
 
 -   **feature**: abstraction of real world phenomena (type or instance); has a geometry and other attributes (properties)
--   **simple feature**: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves) <img src="sf.png" width="200"/>
+-   **simple feature**: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves)
+
+![](images/sf.png){width="200"}  
+
 -   represent geometry by *points*, *lines* or *polygons*, or *collections* thereof
 
 ## Simple features
@@ -153,6 +156,6 @@ Thanks to:
 
 ## Further reading:
 
-Edzer Pebesma, 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal (2018) 10:1, pages 439-446.  
+Edzer Pebesma, 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal (2018) 10:1, pages 439-446.
 
 <https://journal.r-project.org/archive/2018/RJ-2018-009/index.html>
