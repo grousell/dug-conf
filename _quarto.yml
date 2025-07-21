@@ -31,8 +31,8 @@ website:
               href: github-presentation.qmd
             - text: "Survey Platform: SurveyDown"
               href: https://jasonlocklin.github.io/surveydown-presentation/#/title-slide
-
-        
+            - text: "Maps with the `sf` Package"
+              href: maps-with-sf.qmd
 format:
   html:
     theme: cosmo

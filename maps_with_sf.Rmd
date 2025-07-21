@@ -1,0 +1,146 @@
+---
+title: "maps with the sf package"
+author: "David Kanters"
+date: "July 17 2025, (based on rstudio::conf presentaiton by Edzer Pebesma)"
+output: 
+  ioslides_presentation:
+    logo: animation.gif
+    css: pres.css  
+    smaller: true
+  slidy_presentation: default
+  beamer_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, collapse = TRUE)
+```
+
+------------------------------------------------------------------------
+
+<img src="cholera-map.jpg" width="400"/> <img src="2016_election_map.png" width="400"/> [xkcd.com](https://xkcd.com/1939/)
+
+------------------------------------------------------------------------
+
+## Overview
+
+-   Spatial data in R
+-   Simple features, the `sf` R package
+-   Geometrical operations
+-   Tidy: `sf`, `dplyr` & `ggplot2`
+
+## What makes spatial data challenging?
+
+> -   The Earth is a sphere/spheroid/potato\*
+> -   coordinates consist of two or three numbers that *lose most of their meaning when considered individually*
+> -   the most common form is Longitude, Latitude (LL) pairs
+> -   from LL data, `stats::dist` will not give you distances
+> -   maps and screens are flat, and hence can only show *projected* data
+> -   projected distances are distorted, and possibly areas, shapes, directions and shortest paths too
+> -   the meaning of a LL coordinate depends on the geographic *datum* (e.g., WGS84, ETRS89, NAD27 etc)
+> -   a *datum* is unlikely important when mapping continents, but it is when drones try to deliver pizzas
+
+## Simple features
+
+-   **feature**: abstraction of real world phenomena (type or instance); has a geometry and other attributes (properties)
+-   **simple feature**: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves) <img src="sf.png" width="200"/>
+-   represent geometry by *points*, *lines* or *polygons*, or *collections* thereof
+-   a formal standard (ISO, OGC) since 2004
+-   supported by OSGeo libraries GEOS and GDAL
+-   adopted by GeoJSON, GeoSPARQL
+-   has well-known text (WKT) and binary (WKB) encodings
+-   WKB used by spatial databases (PostGIS, MariaDB, SQLite, ...)
+-   standard specifies a number of topological metrics, predicates and operations
+
+## Operations on geometries:
+
+Single:
+
+-   logical predicates: `is_valid`, `is_simple`, `is_empty`
+-   quantities: `length`, `area`
+-   `dimension`: 0 = point(s), 1 = linear, 2 = surface
+-   derived geometries: `buffer`, `centroid`, `boundary`, `convex_hull`, `simplify`, `linemerge`, `polygonize`, `node`, `point_on_surface`, `triangulate`
+
+Pairs/sets:
+
+-   quantities: `distance`
+-   predicates: `intersects`, `within`, `contains`, `covers`, `covered_by`, `crosses`, `touches`, `overlaps`, `equals`, `disjoint`, all other DE-9IM
+-   new geometries: `intersection`, `difference`, `union`, `sym_difference`
+
+## Intersection special cases
+
+<img src="empty.png" width="720"/>
+
+-   (typed) `EMPTY`: think of as missing (`NA`) geometry
+-   `GEOMETRYCOLLECTION`: *single* feature geometry with mix of anything
+
+## Package `sf`
+
+> -   `sf` stores simple feature geometries **as a list-column**
+
+> -   It does that in `sf` objects, *extending* `data.frame` **or** `tibble`
+
+> -   How does it work?
+
+------------------------------------------------------------------------
+
+<img src="nc1.png" width="720"/>
+
+------------------------------------------------------------------------
+
+<img src="nc4.png" width="720"/>
+
+------------------------------------------------------------------------
+
+<img src="nc3.png" width="720"/>
+
+------------------------------------------------------------------------
+
+<img src="nc2_.png" width="720"/>
+
+## `sfg` : geometry for one feature
+
+<img src="classes.png" width="800"/>
+
+------------------------------------------------------------------------
+
+## Package `sf` features
+
+-   `sf` objects extend `data.frame` or `tbl_df` with a geometry list-column
+-   fast (C++) WKB $\Longleftrightarrow$ R conversion, used for I/O with libraries and databases
+-   spatial indexes created on-the-fly to scale up geometrical predicates (intersects) and operations (intersection), and selections (nearest feature)
+-   simple and relatively small API
+-   functions/methods start with `st_`, as in
+
+```{r example,echo=TRUE}
+library(sf)
+st_is_simple(st_point(0:1))
+```
+
+## `sf` & `tidyverse`
+
+-   `sf` spatial objects are `data.frame`s (or `tibble`s)
+-   you can always un-`sf`, and work with `tbl_df` or `data.frame` having an `sfc` list-column
+-   `sf` methods for `filter`, `arrange`, `distinct`, `group_by`, `ungroup`, `mutate`, `select` have sticky geometry
+-   `st_join` joins tables based on a spatial predicate, or user-defined function
+-   `summarise` unions geometry by group (or altogether)
+
+<img src="summ.png" width="800"/>
+
+\`\`\`
+
+------------------------------------------------------------------------
+
+## Conclusions
+
+-   `sf` provides tidy spatial analysis, for vector data
+-   there are 6 package vignettes for further reading
+
+Thanks to:
+
+> -   Edzer Pebesma
+> -   the `#rspatial` community
+> -   R Consortium for funding sf and stars
+
+Further reading:
+
+Edzer Pebesma, 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal (2018) 10:1, pages 439-446. <https://journal.r-project.org/archive/2018/RJ-2018-009/index.html>
