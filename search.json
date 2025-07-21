@@ -6,8 +6,9 @@
     "section": "Why use GitHub?",
     "text": "Why use GitHub?",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -17,8 +18,9 @@
     "section": "Why use GitHub?",
     "text": "Why use GitHub?\nCollaborate with colleagues",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -28,8 +30,9 @@
     "section": "Why use GitHub?",
     "text": "Why use GitHub?\nCreate your own packages",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -39,8 +42,9 @@
     "section": "Why use GitHub?",
     "text": "Why use GitHub?\nNot these packages…",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -50,8 +54,9 @@
     "section": "Why use GitHub?",
     "text": "Why use GitHub?\nThese packages:",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -61,8 +66,9 @@
     "section": "Example",
     "text": "Example\nhttps://github.com/grousell/tcdsb\n\n\n\nmtcars |&gt; \n  head(3) |&gt; \n  rownames_to_column(\"car\") |&gt; \n  ggplot(aes(x = car, y = disp)) +\n  geom_col() + \n  labs(title = \"Title of Plot\",\n       subtitle = \"Subtitle\", \n       x = NULL, \n       y = \"Displacement\") +\n  theme()\n\n\n\n\n\n\n\n\n\n\nmtcars |&gt; \n  head(3) |&gt; \n  rownames_to_column(\"car\") |&gt; \n  ggplot(aes(x = car, y = disp)) +\n  geom_col(fill = tcdsb_board_color) + \n  labs(title = \"Title of Plot\",\n       subtitle = \"Subtitle\", \n       x = NULL, \n       y = \"Displacement\") + \n  tcdsb_ggplot_theme()",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -72,8 +78,9 @@
     "section": "Set up",
     "text": "Set up\nQuick and dirty steps - to know more go to happygitwithr.com\n\nRegister a GitHub account github.com\n\nInstall Git for Windows gitforwindows.org\n\nIntroduce yourself to Git\n\n\n## install if needed (do this exactly once):\n## install.packages(\"usethis\")\n\nlibrary(usethis)\nuse_git_config(user.name = \"Jane Doe\", user.email = \"jane@example.org\")",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -83,8 +90,9 @@
     "section": "Set up",
     "text": "Set up\n\nCreate new project\nRun usethis::user_git() This initializes git, you will have to re-start R and the Git tab will appear",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -94,8 +102,9 @@
     "section": "Set up",
     "text": "Set up\n\nRun usethis::create_github_token()\nRe-start RStudio\nRun usethis::use_github()\n\nThe repo should be part of your Github",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -105,8 +114,9 @@
     "section": "Forking other Repos",
     "text": "Forking other Repos",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -116,8 +126,9 @@
     "section": "Forking other Repos",
     "text": "Forking other Repos",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -127,8 +138,9 @@
     "section": "Forking other Repos",
     "text": "Forking other Repos\n\n\n\n\nTest_Quarto repo now appears in my Github\n\n\nQuarto_test repo now appears in my Github",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -138,8 +150,9 @@
     "section": "Forking other Repos",
     "text": "Forking other Repos\n\n\nTo work on repo in RStudio, create a new Porject -&gt; Version Control",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -149,8 +162,9 @@
     "section": "Forking other Repos",
     "text": "Forking other Repos",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -160,8 +174,9 @@
     "section": "Forking other Repos",
     "text": "Forking other Repos\n\n\nNow you can make changes, push back to GitHub and merge forks",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -171,8 +186,9 @@
     "section": "Ontario Board Tools (obt)",
     "text": "Ontario Board Tools (obt)\nhttps://github.com/grousell/obt\n\nele_rc |&gt; \n  head()\n\n# A tibble: 6 × 16\n      id school    grade responsibility independent_work initiative organization\n   &lt;int&gt; &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;            &lt;chr&gt;      &lt;chr&gt;       \n1 470846 Degrassi… 2     S              G                S          S           \n2 234086 Degrassi… 5     E              E                E          E           \n3 526182 Degrassi… 5     G              G                G          G           \n4 475311 Degrassi… 2     G              G                G          S           \n5 455525 Degrassi… 8     E              E                G          E           \n6 462941 Degrassi… 4     G              G                G          G           \n# ℹ 9 more variables: collaboration &lt;chr&gt;, self_regulation &lt;chr&gt;,\n#   reading &lt;chr&gt;, writing &lt;chr&gt;, mathematics &lt;chr&gt;,\n#   science_and_technology &lt;chr&gt;, social_studies &lt;chr&gt;, history &lt;chr&gt;,\n#   geography &lt;chr&gt;",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -182,8 +198,9 @@
     "section": "Ontario Board Tools (obt)",
     "text": "Ontario Board Tools (obt)\n\n\n\nele_rc |&gt; \n  count(reading)\n\n# A tibble: 64 × 2\n   reading     n\n   &lt;chr&gt;   &lt;int&gt;\n 1 50          7\n 2 51          1\n 3 52          2\n 4 53          1\n 5 54          3\n 6 55          7\n 7 56          1\n 8 57          1\n 9 58          9\n10 60         26\n# ℹ 54 more rows\n\n\n\n\nele_rc |&gt;\n  mutate(reading = obt_recode_rc_to_levels(reading)) |&gt; \n  count(reading)\n\n# A tibble: 7 × 2\n  reading     n\n  &lt;fct&gt;   &lt;int&gt;\n1 ALT        14\n2 NE1       128\n3 Level 1   175\n4 Level 2   604\n5 Level 3  1036\n6 Level 4   540\n7 &lt;NA&gt;        3",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
@@ -193,29 +210,20 @@
     "section": "Ontario Board Tools (obt)",
     "text": "Ontario Board Tools (obt)\n\n\n\nsec_rc |&gt; \n  select(id, course_number)\n\n# A tibble: 2,000 × 2\n       id course_number\n    &lt;int&gt; &lt;chr&gt;        \n 1 861423 ENG3C        \n 2 959022 HPW3C        \n 3 924795 CLU3M        \n 4 773851 AMI4M        \n 5 611411 MEL3E        \n 6 621233 PLF4M        \n 7 811400 MPM2D        \n 8 964303 HSP3U        \n 9 908982 HSP3U        \n10 963335 CHC2D        \n# ℹ 1,990 more rows\n\n\n\n\nsec_rc |&gt; \n  select(id, course_number) |&gt; \n  mutate(course_level = obt_sec_level_study(course_number))\n\n# A tibble: 2,000 × 3\n       id course_number course_level      \n    &lt;int&gt; &lt;chr&gt;         &lt;chr&gt;             \n 1 861423 ENG3C         College           \n 2 959022 HPW3C         College           \n 3 924795 CLU3M         University/College\n 4 773851 AMI4M         University/College\n 5 611411 MEL3E         Workplace         \n 6 621233 PLF4M         University/College\n 7 811400 MPM2D         Academic          \n 8 964303 HSP3U         University        \n 9 908982 HSP3U         University        \n10 963335 CHC2D         Academic          \n# ℹ 1,990 more rows",
     "crumbs": [
-      "R Resources",
-      "Fork me!"
+      "Meetings",
+      "2025-07-17",
+      "Fork Me! Why You Should Learn GitHub"
     ]
   },
   {
-    "objectID": "r-books.html",
-    "href": "r-books.html",
-    "title": "R Books",
+    "objectID": "r-blogs.html",
+    "href": "r-blogs.html",
+    "title": "R Blogs",
     "section": "",
-    "text": "Logo image\n\n\n\nSelected Reading for R\nR for Data Science\nAdvanced R\nExploratory Data Analysis with R\nHappy Git with R\nggplot2\n\n\n\nNext Section\nHere is more content.",
+    "text": "Logo image\n\n\n\nSelected Blogs for R\nR for Rest of Us\nRiffomonas Project\nAlbert Rapp",
     "crumbs": [
       "R Resources",
-      "R Books"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Logo image\n\nIn the spring of 2007 the Hierarchical Linear Model Learning and Research Community (HLM-LRC) was formed to promote and support the use of Hierarchical Linear Modelling. A variety of opportunities arose for members to practice and implement their HLM skills including presentations at the Canadian Society for the Study of Education and an Ontario Ministry of Education research inquiry into early years through the Barrie Region MISA PNC (Managing Information for Student Achievement Professional Network Centre). Over the years, the topics explored through the HLM-LRC expanded to include all manner of issues related to data and research sciences.\nIn the spring of 2013 the HLM-LRC was rebranded as the Data User Group (DUG) to reflect the broader discussions and capacity building opportunities that emerged through the network. Resources that were developed as part of the HLM-LRC have been moved to this public website to make the organizational learning visible and promote broader participation.\nParticipation in DUG is open to anyone with an interest in data and/or research sciences and consists of email notifications of relevant events and resources. The meetings and workshops that are organized by DUG are guided by member inquiries, interests and feedback. If you are interested in joining the DUG email distribution list, or would like to recommend/request a workshop topic, please contact Conley_Chris@Durham.edu.on.ca",
-    "crumbs": [
-      "About"
+      "Blogs"
     ]
   },
   {
@@ -229,13 +237,31 @@
     ]
   },
   {
-    "objectID": "r-resources.html",
-    "href": "r-resources.html",
-    "title": "R Resources",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Logo image",
+    "text": "Logo image\n\nIn the spring of 2007 the Hierarchical Linear Model Learning and Research Community (HLM-LRC) was formed to promote and support the use of Hierarchical Linear Modelling. A variety of opportunities arose for members to practice and implement their HLM skills including presentations at the Canadian Society for the Study of Education and an Ontario Ministry of Education research inquiry into early years through the Barrie Region MISA PNC (Managing Information for Student Achievement Professional Network Centre). Over the years, the topics explored through the HLM-LRC expanded to include all manner of issues related to data and research sciences.\nIn the spring of 2013 the HLM-LRC was rebranded as the Data User Group (DUG) to reflect the broader discussions and capacity building opportunities that emerged through the network. Resources that were developed as part of the HLM-LRC have been moved to this public website to make the organizational learning visible and promote broader participation.\nParticipation in DUG is open to anyone with an interest in data and/or research sciences and consists of email notifications of relevant events and resources. The meetings and workshops that are organized by DUG are guided by member inquiries, interests and feedback. If you are interested in joining the DUG email distribution list, or would like to recommend/request a workshop topic, please contact Conley_Chris@Durham.edu.on.ca",
     "crumbs": [
-      "R Resources"
+      "About"
     ]
+  },
+  {
+    "objectID": "r-books.html",
+    "href": "r-books.html",
+    "title": "R Books",
+    "section": "",
+    "text": "Logo image\n\n\n\nSelected Reading for R\nR for Data Science\nAdvanced R\nExploratory Data Analysis with R\nHappy Git with R\nggplot2",
+    "crumbs": [
+      "R Resources",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Logo image"
   }
 ]
