@@ -19,7 +19,7 @@ jobs:
 
       - name: Install tidyverse
         run: |
-          install.packages("tidyverse", repos = "https://cloud.r-project.org")          
+          install.packages(c("tidyverse", "usethis", "pkgdown", "rcmdcheck", "rversions", "urlchecker"), repos = "https://cloud.r-project.org")          
         shell: Rscript {0}
 
       - name: Install devtools
