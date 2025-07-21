@@ -20,6 +20,8 @@ website:
             href: r-books.qmd
           - text: "Fork me!"
             href: github-presentation.qmd
+          - text: "Survey Platform: SurveyDown"
+            href: https://jasonlocklin.github.io/surveydown-presentation/#/title-slide
 format:
   html:
     theme: cosmo
