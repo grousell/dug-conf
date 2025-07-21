@@ -3,9 +3,12 @@ project:
   
 website:
   title: "DUG::conf"
-  body-header: | 
-    ![Logo image](/images/dugheader2.png){width=120%}
+  # margin-header: |
+  #   ![Logo image](/images/dugheader2.png){width=120%}
+  # body-header: |
+  #   ![Logo image](/images/dugheader2.png){width=120%}
   sidebar:
+    logo: "/images/dugheader2.png"
     style: "docked"
     search: true
     contents:
@@ -13,6 +16,7 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
+      - posts.qmd
       - section: "R Resources"
         contents: 
         - text: "Books"
