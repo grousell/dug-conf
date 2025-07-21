@@ -1,0 +1,9 @@
+---
+title: "R Blogs"
+---
+
+# Selected Blogs for R
+
+[R for Rest of Us](https://rfortherestofus.com/blog)\
+[Riffomonas Project](https://www.youtube.com/c/RiffomonasProject)\
+[Albert Rapp](https://albert-rapp.de/blog)\

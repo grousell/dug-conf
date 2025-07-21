@@ -10,6 +10,3 @@ title: "R Books"
 [Happy Git with R](https://happygitwithr.com/)\
 [ggplot2](https://ggplot2-book.org/)\
 
-# Next Section
-
-Here is more content. 

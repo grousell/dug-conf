@@ -1,5 +1,6 @@
 ---
 title: "Fork Me! Why You Should Learn GitHub"
+author: "Greg Rousell - Toronto Catholic District School Board"
 format:
   revealjs: 
     theme: [default, custom.scss]
@@ -97,14 +98,12 @@ use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
 
 ## Set up
 
-4. Create new project
-5. Run `usethis::user_git()`
-  This initializes git, you will have to re-start R and the Git tab will appear
+4.  Create new project
+5.  Run `usethis::user_git()` This initializes git, you will have to re-start R and the Git tab will appear
 
 ::::: columns
 ::: column
 ![](images/r_studio_image_1){width="100%"}
-
 :::
 
 ::: column
@@ -114,9 +113,9 @@ use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
 
 ## Set up
 
-6. Run `usethis::create_github_token()`\
-Re-start RStudio
-7. Run  `usethis::use_github()`
+6.  Run `usethis::create_github_token()`\
+    Re-start RStudio
+7.  Run `usethis::use_github()`
 
 The repo should be part of your Github
 
@@ -136,7 +135,6 @@ The repo should be part of your Github
 :::
 :::::
 
-
 ## Forking other Repos
 
 ::::: columns
@@ -149,7 +147,7 @@ Test_Quarto repo now appears in my Github
 :::
 :::::
 
-::: {.notes}
+::: notes
 Quarto_test repo now appears in my Github
 :::
 
@@ -157,15 +155,17 @@ Quarto_test repo now appears in my Github
 
 ![](images/fork_4.png)
 
-::: {.notes}
-To work on repo in RStudio, create a new Porject -> Version Control
+::: notes
+To work on repo in RStudio, create a new Porject -\> Version Control
 :::
 
 ## Forking other Repos
+
 ::::: columns
 ::: column
 ![](images/fork_5.png)
-::: 
+:::
+
 ::: column
 ![](images/fork_6.png)
 :::
@@ -175,7 +175,7 @@ To work on repo in RStudio, create a new Porject -> Version Control
 
 ![](images/fork_7.png)
 
-::: {.notes}
+::: notes
 Now you can make changes, push back to GitHub and merge forks
 :::
 
@@ -198,7 +198,8 @@ ele_rc |>
 ele_rc |> 
   count(reading)
 ```
-::: 
+:::
+
 ::: column
 ```{r}
 #| echo: true
@@ -206,12 +207,12 @@ ele_rc |>
   mutate(reading = obt_recode_rc_to_levels(reading)) |> 
   count(reading)
 ```
-::: 
+:::
 :::::
 
 ## Ontario Board Tools (`obt`)
 
-::::: {.columns}
+::: columns
 ::: {.column width = "40%"}
 
 ```{r}
@@ -220,6 +221,7 @@ sec_rc |>
   select(id, course_number)
 ```
 :::
+
 ::: {.column width = "60%"}
 
 ```{r}
@@ -228,5 +230,5 @@ sec_rc |>
   select(id, course_number) |> 
   mutate(course_level = obt_sec_level_study(course_number))
 ```
-:::
-:::::
+
+::: :::::

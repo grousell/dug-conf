@@ -14,14 +14,21 @@ website:
       - text: "About"
         href: about.qmd
       - section: "R Resources"
-        href: r-resources.qmd
-        contents:
-          - text: "R Books"
-            href: r-books.qmd
-          - text: "Fork me!"
-            href: github-presentation.qmd
-          - text: "Survey Platform: SurveyDown"
-            href: https://jasonlocklin.github.io/surveydown-presentation/#/title-slide
+        contents: 
+        - text: "Books"
+          href: r-books.qmd
+        - text: "Blogs"
+          href: r-blogs.qmd
+      - section: "Meetings"
+        contents: 
+          - section: "2025-07-17"
+            contents: 
+            - text: "Fork Me! Why You Should Learn GitHub"
+              href: github-presentation.qmd
+            - text: "Survey Platform: SurveyDown"
+              href: https://jasonlocklin.github.io/surveydown-presentation/#/title-slide
+
+        
 format:
   html:
     theme: cosmo
