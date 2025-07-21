@@ -19,7 +19,11 @@ jobs:
 
       - name: Install R packages
         run: |
-          install.packages(c("tidyverse", "devtools"), repos = "https://cloud.r-project.org")
+          install.packages(c("tidyverse", "devtools"), repos = "https://cloud.r-project.org")          
+        shell: Rscript {0}
+
+      - name: Install TCDSB package
+        run:
           devtools::install_github("grousell/tcdsb")
         shell: Rscript {0}
 
