@@ -7,6 +7,7 @@ website:
   #   ![Logo image](/images/dugheader2.png){width=120%}
   # body-header: |
   #   ![Logo image](/images/dugheader2.png){width=120%}
+  google-analytics: "G-SDBDVSXSRC"
   sidebar:
     logo: "/images/dugheader2.png"
     style: "docked"
